@@ -17,5 +17,5 @@ enable = [
 ]
 
 disable = [
-  "org.fedoraproject.Anaconda.Modules.Subscription"
+  "org.fedoraproject.Anaconda.Modules.Subscription",
 ]
