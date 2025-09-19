@@ -9,7 +9,7 @@ bootc switch --mutate-in-place --transport registry ghcr.io/icycoide/tyrianos:la
 enable = [
   "org.fedoraproject.Anaconda.Modules.Storage",
   "org.fedoraproject.Anaconda.Modules.Network",
-  "org.fedoraproject.Anaconda.Modules.Timezone" 
+  "org.fedoraproject.Anaconda.Modules.Timezone",
   "org.fedoraproject.Anaconda.Modules.Users",
   "org.fedoraproject.Anaconda.Modules.Runtime",
   "org.fedoraproject.Anaconda.Modules.Security",
