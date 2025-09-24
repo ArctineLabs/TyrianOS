@@ -49,16 +49,12 @@ function tus.account {
 
 function tus.drivers {
   clear
-  gpu_type=$(gum choose --header="What kind of GPU do you have?" "Intel" "AMD" "Nvidia")
+  gpu_type=$(gum choose --header="Would you like to install NVIDIA drivers?" "Yes" "No")
   case "$gpu_type" in
-    intel|Intel)
+    No)
       echo "Nothing to do!"; sleep 2
       ;;
-    amd|AMD)
-      gum spin --title="Installing AMD GPU drivers..." -- pkexec rpm-ostree override remove mesa-va-drivers --install mesa-va-drivers-freeworld || bail "GPU driver installation failed"
-      gum spin --title="Hold on a bit more..." -- pkexec rpm-ostree override remove mesa-vdpau-drivers --install mesa-vdpau-drivers-freeworld || bail "GPU driver installation failed"
-      ;;
-    nvidia|Nvidia)
+    Yes)
       gum spin --title="Installing NVIDIA GPU drivers..." -- pkexec rpm-ostree install libva-nvidia-driver -y || bail "GPU driver installation failed"
       ;;
     *)
@@ -130,7 +126,7 @@ function tus.end {
 #    ;;
 #esac
   clear
-  read -rp "Thank you for installing TyrianOS! Press [ENTER] to reboot" >/dev/null
+  read -rp "Thank you for installing TyrianOS! Press [ENTER] to reboot"
   reboot
 }
 
