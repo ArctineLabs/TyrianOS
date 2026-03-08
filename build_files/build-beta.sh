@@ -212,4 +212,4 @@ dnf -y remove fedora-bookmarks fedora-backgrounds-kde fedora-chromium-config fed
 
 #systemctl disable gdm
 limsg s 5 i "Enabling SDDM"
-systemctl enable sddm
+systemctl enable sddm || true
