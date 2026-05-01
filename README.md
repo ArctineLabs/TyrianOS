@@ -4,6 +4,14 @@
 
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/tyrianos)](https://artifacthub.io/packages/search?repo=tyrianos) [![Build Custom Image](https://github.com/ArctineLabs/TyrianOS/actions/workflows/build.yml/badge.svg)](https://github.com/ArctineLabs/TyrianOS/actions/workflows/build.yml)
 
+# Is this project still active?
+
+Yup!
+
+TyrianOS is still being maintaned and updated once in a while. Despite there being a lack of commits and new features, everything is being taken care of by our automatic build system already!
+
+Meanwhile, our focus shifted towards [ArctineOS](https://arctine.rootsource.cc/OS/), which is still work in progress.
+
 # Purpose
 
 WIP section

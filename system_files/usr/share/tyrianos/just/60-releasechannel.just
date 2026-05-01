@@ -21,7 +21,7 @@ switch-channel BRANCH="":
     		kdialog --msgbox "Click OK to reboot.";pkexec systemctl reboot -i || bail "Failed to call to reboot."
     	;;
     	*)
-    		echo "Specify one of the release channels as argument: 42, edge"
+    		echo "Specify one of the release channels as argument: main, edge"
     		exit 1
     	;;
     esac
