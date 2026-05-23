@@ -154,8 +154,8 @@ limsg s 2 i "Installing packages: initial-setup-gui-wayland-plasma"
 dnf5 install initial-setup-gui-wayland-plasma -y
 
 #### Install broadcom drivers
-limsg s 2 i "Installing packages: broadcom-wl and akmod-wl"
-dnf5 install broadcom-wl akmod-wl -y
+limsg s 2 i "Installing packages: broadcom-wl"
+dnf5 install broadcom-wl -y # akmod-wl -y
 
 #### Install KDE Plasma - Minimal
    # When forking, uncomment this line and comment the one above to install the minimal KDE suite instead
