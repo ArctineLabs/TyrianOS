@@ -9,6 +9,6 @@ yad --about \
         --authors="Arctine" \
         --license="Apache-2.0 and others" \
         --comments="A Fedora Kinoite-based operating system." \
-        --copyright="Copyright (c) 2025 Icycoide" \
+        --copyright="Copyright (c) 2025-2026 Arctine" \
         --pversion="$VERSION" \
         --pname="TyrianOS"
