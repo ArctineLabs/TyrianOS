@@ -14,10 +14,10 @@ IMAGE_LIKE="fedora"
 HOME_URL="https://arctine.rootsource.cc/TyrianOS"
 SUPPORT_URL="https://github.com/ArctineLabs/TyrianOS/issues/"
 BUG_SUPPORT_URL="https://github.com/ArctineLabs/TyrianOS/issues/"
-CODE_NAME="Toronto"
+CODE_NAME="Milano"
 #VERSION="${VERSION:-00.00000000}"
 IMAGE_NAME=tyrianos
-IMAGE_VENDOR=icycoide
+IMAGE_VENDOR=arctine
 
 
 # OS Release File
@@ -27,7 +27,7 @@ sed -i "s|^HOME_URL=.*|HOME_URL=\"$HOME_URL\"|" /usr/lib/os-release
 sed -i "s|^SUPPORT_URL=.*|SUPPORT_URL=\"$SUPPORT_URL\"|" /usr/lib/os-release
 sed -i "s|^BUG_REPORT_URL=.*|BUG_REPORT_URL=\"$BUG_SUPPORT_URL\"|" /usr/lib/os-release
 sed -i "s|^DEFAULT_HOSTNAME=.*|DEFAULT_HOSTNAME=\"tyrianos\"|" /usr/lib/os-release
-sed -i "s|^VERSION_CODENAME=.*|VERSION_CODENAME=\"Glarus\"|" /usr/lib/os-release
+sed -i "s|^VERSION_CODENAME=.*|VERSION_CODENAME=\"Milano\"|" /usr/lib/os-release
 
 
 # Added in systemd 249.
