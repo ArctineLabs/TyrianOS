@@ -11,8 +11,8 @@ switch-channel BRANCH="":
     echo "TyrianOS Developer Tools: Changing release channel"
     case $BRANCH in
     	main)
-    		kdialog --title "Change release channel" --warningcontinuecancel "You are about to switch to TyrianOS 42. Are you sure you want to proceed? Save all your work and shut down your applications before proceeding." || exit 1
-    		rpm-ostree rebase ostree-unverified-registry:ghcr.io/arctinelabs/tyrianos:42 || bail "Failed to rebase to $BRANCH"
+    		kdialog --title "Change release channel" --warningcontinuecancel "You are about to switch to TyrianOS 44. Are you sure you want to proceed? Save all your work and shut down your applications before proceeding." || exit 1
+    		rpm-ostree rebase ostree-unverified-registry:ghcr.io/arctinelabs/tyrianos:44 || bail "Failed to rebase to $BRANCH"
     		kdialog --msgbox "Click OK to reboot.";pkexec systemctl reboot -i || bail "Failed to call to reboot."
     	;;
     	edge|EDGE|staging|testing)

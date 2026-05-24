@@ -212,5 +212,5 @@ dnf -y remove fedora-bookmarks fedora-backgrounds-kde fedora-chromium-config fed
 #### Example for enabling a System Unit File
 
 #systemctl disable gdm
-limsg s 5 i "Enabling SDDM"
-systemctl enable sddm
+#limsg s 5 i "Enabling SDDM"
+#systemctl enable sddm
