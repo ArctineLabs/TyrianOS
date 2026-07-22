@@ -29,6 +29,8 @@ It uses KDE Plasma as desktop environment and is meant for general use.
 	- Terra is a repository that is built on the Andaman toolchain, which simplifies the process of maintaining packages. Packages on Terra are automatically updated as soon as there's a new upstream release on a 30 minute interval. Packages on Terra are built by a team of maintainers with experience, ensuring the maintenance of a high quality of packages.
 - **Customised KDE installation**
 	- TyrianOS comes with a customised version of KDE, mostly with elements from the [Monochrome-KDE](https://github.com/pwyde/monochrome-kde) theme
+- **Two distinct modes**
+  - TyrianOS comes with a desktop and mobile session, fitting the needs of different device sizes.
 
 
 More things are announced to come to TyrianOS soon. 

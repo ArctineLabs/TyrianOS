@@ -24,14 +24,20 @@ repair-options ACTION="" ADDITIONAL_OPTIONS="":
     	;;
     	factory-reset)
         echo "Beta functionality, this command is NOT ready.";exit 1
-    		sudo TART_FLAG=C /usr/share/tyrianos/scripts/admin-resettool
+#    		sudo TART_FLAG=C /usr/share/tyrianos/scripts/admin-resettool
     	;;
-    	config-reset)
-    		TART_FLAG=P
+    	user-config-reset)
+			echo "Copying defaults to user..."
+			cp --update -vR /etc/skel/* $HOME/
+			cp --update -vR /etc/skel/.* $HOME/
+			echo "Restarting..."
+			reboot
     	;;
     	*)
     		echo "
-    	repair-options repair        - Tries to repair the TyrianOS installation
-    	repair-options factory-reset - Resets your TyrianOS installation back to factory defaults"
+    	repair-options repair            - Tries to repair the TyrianOS installation
+		repair-options user-config-reset - Overwrites modified configuration files with the ones
+		                                   found in /etc/skel (will reboot system)
+    	repair-options factory-reset     - Resets your TyrianOS installation back to factory defaults"
     	;;
     esac

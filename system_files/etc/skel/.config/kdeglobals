@@ -147,7 +147,12 @@ smallestReadableFont=Inter,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 toolBarFont=Inter,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [KDE]
-LookAndFeelPackage=Monochrome
+AutomaticLookAndFeel=true
+DefaultDarkLookAndFeel=TyrianOSDark
+DefaultLightLookAndFeel=TyrianOSLight
+LookAndFeelPackage=TyrianOSDark
+contrast=4
+frameContrast=0.2
 
 [KFileDialog Settings]
 Allow Expansion=false

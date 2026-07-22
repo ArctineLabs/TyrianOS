@@ -120,10 +120,12 @@ scriptcolors
 
 
 limsg s 1 i "Installing repositories: RPMFusion"
+# shellcheck disable=SC2046
 dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 
 #### Add Fyra Labs Terra repository
 limsg s 1 w "Installing repositories: Terra (No GPG Check)"
+# shellcheck disable=SC2016
 dnf5 install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release -y
 
 #### Install charmbracelet Gum
@@ -140,8 +142,8 @@ rpm --import https://repo.charm.sh/yum/gpg.key
 limsg s 2 i "Installing packages: Tmux, Git"
 dnf5 install -y tmux git
 
-limsg s 2 i "Installing packages: KDE Plasma Desktop, KDialog"
-dnf5 install -y @kde-desktop kdialog
+limsg s 2 i "Installing packages: KDE Plasma Desktop, KDialog, Plasma Mobile"
+dnf5 install -y @kde-desktop kdialog plasma-mobile plasma-mobile-sounds
 
 limsg s 2 i "Installing packages: Gum"
 dnf install gum -y

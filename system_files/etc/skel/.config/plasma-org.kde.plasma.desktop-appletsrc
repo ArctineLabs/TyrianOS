@@ -46,8 +46,10 @@ popupWidth=633
 DialogHeight=540
 DialogWidth=720
 
-[Containments][946][Applets][947][Configuration][General]
+[Containments][1154][Applets][1155][Configuration][General]
 favoritesPortedToKAstats=true
+icon=view-list-details
+systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 
 [Containments][946][Applets][948]
 immutability=1
