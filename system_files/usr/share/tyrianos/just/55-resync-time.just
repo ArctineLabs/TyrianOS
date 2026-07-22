@@ -1,4 +1,4 @@
-# Force time resynchronisation
+# Force time resynchronisation (add timesyncd or chronyd as argument)
 resync-time +METHOD:
     #!/usr/bin/bash
     METHOD="{{ METHOD }}"
@@ -8,7 +8,12 @@ resync-time +METHOD:
         echo "Restarting chronyd..."
         sudo systemctl restart chronyd || echo "FAIL"
       ;;
-      *)
+      timesyncd)
+        echo "Restarting timesyncd..."
         sudo systemctl restart systemd-timesyncd.service || echo "FAIL"
+      ;;
+      *)
+        echo "Unknown method $METHOD. Specify either chronyd or timesyncd."
+        exit 1
       ;;
     esac
