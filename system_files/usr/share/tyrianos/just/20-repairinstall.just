@@ -26,7 +26,6 @@ repair-options ACTION="" ADDITIONAL_OPTIONS="":
 		factory-reset)
 			echo "Beta functionality, this command is NOT ready."
 			exit 1
-#			sudo TART_FLAG=C /usr/share/tyrianos/scripts/admin-resettool
 			;;
 		user-config-reset)
 			echo "Copying defaults to user..."
