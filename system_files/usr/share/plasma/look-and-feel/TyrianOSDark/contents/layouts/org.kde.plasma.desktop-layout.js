@@ -19,7 +19,7 @@ var layout = {
                 },
                 "/Wallpaper/org.kde.image/General": {
                     "Image": "/usr/share/wallpapers/TyOS42/",
-                    "SlidePaths": "/var/home/kevadesu/.local/share/wallpapers/,/usr/share/wallpapers/"
+                    "SlidePaths": "/usr/share/wallpapers/"
                 }
             },
             "wallpaperPlugin": "org.kde.image"
@@ -41,7 +41,9 @@ var layout = {
                             "DialogWidth": "720"
                         },
                         "/General": {
-                            "favoritesPortedToKAstats": "true"
+                            "favoritesPortedToKAstats": "true",
+                            "icon": "view-list-details",
+                            "systemFavorites": "suspend\\,hibernate\\,reboot\\,shutdown"
                         }
                     },
                     "plugin": "org.kde.plasma.kickoff"

@@ -17,7 +17,7 @@ BUG_SUPPORT_URL="https://github.com/ArctineLabs/TyrianOS/issues/"
 CODE_NAME="EDGE $(date +%y.%m)"
 #VERSION="${VERSION:-00.00000000}"
 IMAGE_NAME=tyrianos
-IMAGE_VENDOR=icycoide
+IMAGE_VENDOR=arctine
 
 
 # OS Release File

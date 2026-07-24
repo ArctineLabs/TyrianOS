@@ -41,7 +41,9 @@ var layout = {
                             "DialogWidth": "720"
                         },
                         "/General": {
-                            "favoritesPortedToKAstats": "true"
+                            "favoritesPortedToKAstats": "true",
+                            "icon": "view-list-details",
+                            "systemFavorites": "suspend\\,hibernate\\,reboot\\,shutdown"
                         }
                     },
                     "plugin": "org.kde.plasma.kickoff"
