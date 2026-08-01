@@ -124,9 +124,9 @@ limsg s 1 i "Installing repositories: RPMFusion"
 dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 
 #### Add Fyra Labs Terra repository
-limsg s 1 w "Installing repositories: Terra (No GPG Check)"
+limsg s 1 w "Installing repositories: Terra (w/ GPG Keys)"
 # shellcheck disable=SC2016
-dnf5 install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release -y
+dnf5 install --nogpgcheck --repofrompath 'terra,https://fyralabs.com' terra-release terra-gpg-keys -y
 
 #### Install charmbracelet Gum
 limsg s 1 i "Installing repositories: Charm (for Gum)"
