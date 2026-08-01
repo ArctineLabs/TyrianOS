@@ -155,8 +155,14 @@ limsg s 2 i "Installing packages: Yad"
 dnf install yad -y
 
 #### Install initial setup
-limsg s 2 i "Installing packages: initial-setup-gui-wayland-plasma"
-dnf5 install initial-setup-gui-wayland-plasma -y
+limsg s 2 i "Installing packages: plasma-setup"
+dnf5 install plasma-setup -y
+
+limsg s 2 i "Configuring plasma-setup: Preparing systemd for user creation"
+systemd-sysusers
+
+limsg s 2 i "Configuring plasma-setup: Enable it"
+systemctl enable plasma-setup.service
 
 #### Install KDE Plasma - Minimal
    # When forking, uncomment this line and comment the one above to install the minimal KDE suite instead
