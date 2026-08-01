@@ -182,6 +182,9 @@ dnf5 install papirus-icon-theme -y
 #### Install Inter
 limsg s 3 i "Installing font: Inter"
 dnf5 install rsms-inter-fonts rsms-inter-vf-fonts -y
+#### Install all Noto fonts
+limsg s 3 i "Installing font: Google Noto *"
+dnf5 install google-noto-* -y
 #### Install Monochrome-KDE
 limsg s 3 i "Installing Monochrome-KDE: Cloning repository"
 git clone https://github.com/pwyde/monochrome-kde
