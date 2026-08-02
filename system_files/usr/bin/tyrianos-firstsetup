@@ -14,6 +14,7 @@ export BIWhite='\033[1;97m'      # White
 
 function tus.start {
   clear
+  lookandfeeltool -a TyrianOSLight
   killall plasmashell
   echo -e "${BIWhite}Welcome${Color_Off}"
   echo -e "${White}${NAME} ${VERSION_ID}"
@@ -95,39 +96,40 @@ function tus.end {
   gum spin --title="Queuing updates (if any)..." -- pkexec rpm-ostree upgrade
   gum spin --title="Enabling Initramfs generation..." -- pkexec rpm-ostree initramfs --enable
   gum spin --title="Force syncing initramfs..." -- pkexec rpm-ostree initramfs-etc --force-sync -r
-  sudo touch /etc/.tusdone
-# Planning removal!!
-#kstart plasmashell &
-#clear
-#echo "All done!"
-#option=$(gum choose --header="What do you want to do next?" "Open Settings" "Install apps" "Quit")
-#case "$option" in
-#  "Open Settings")
-#    systemsettings
-#    ;;
-#  "Install apps")
-#    plasma-discover
-#    ;;
-#  Quit)
-#    exit
-#    ;;
-#  *)
-#    echo "?."
-#    ;;
-#esac
-#clear
-#option=$(gum choose --header="To finish the installation of GPU drivers, a reboot is pending. Do you want to reboot now or later?" "Restart now" "Later")
-#case "$option" in
-#  "Restart now")
-#    systemctl reboot -i
-#    ;;
-#  "Later")
-#    echo "OK"
-#    ;;
-#esac
+  echo "Please enter your password to write to /etc/.tusdone"
+  echo "Abc" | sudo tee "/etc/tusdone"
+#  Planning removal!!
+  kstart plasmashell &
   clear
-  read -rp "Thank you for installing TyrianOS! Press [ENTER] to reboot"
-  reboot
+  echo "All done!"
+  option=$(gum choose --header="What do you want to do next?" "Open Settings" "Install apps" "Quit")
+  case "$option" in
+    "Open Settings")
+      systemsettings
+      ;;
+    "Install apps")
+      plasma-discover
+      ;;
+    Quit)
+      exit
+      ;;
+    *)
+      echo "?."
+      ;;
+  esac
+  clear
+#  option=$(gum choose --header="To finish the installation of GPU drivers, a reboot is pending. Do you want to reboot now or later?" "Restart now" "Later")
+#  case "$option" in
+#    "Restart now")
+#      systemctl reboot -i
+#      ;;
+#    "Later")
+#      echo "OK"
+#      ;;
+#  esac
+#  clear
+#  read -rp "Thank you for installing TyrianOS! Press [ENTER] to reboot"
+#  reboot
 }
 
 main() {
@@ -141,7 +143,7 @@ main() {
 
 bail() { echo -e "${BRed}ERROR: First time setup failed with the following message:${Color_Off} $1"; read; exit 1; }
 
-if [ ! -f "/etc/.tusdone" ]; then
+if [ ! -f "/etc/tusdone" ]; then
     main
 fi
 
