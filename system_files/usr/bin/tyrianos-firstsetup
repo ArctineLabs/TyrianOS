@@ -96,8 +96,7 @@ function tus.end {
   gum spin --title="Queuing updates (if any)..." -- pkexec rpm-ostree upgrade
   gum spin --title="Enabling Initramfs generation..." -- pkexec rpm-ostree initramfs --enable
   gum spin --title="Force syncing initramfs..." -- pkexec rpm-ostree initramfs-etc --force-sync
-  echo "Please enter your password to write to /etc/.tusdone"
-  echo "Done" | sudo tee "/etc/tusdone"
+  pkexec touch /etc/tusdone
 #  Planning removal!!
   kstart plasmashell &
   clear
