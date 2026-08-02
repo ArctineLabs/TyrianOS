@@ -48,7 +48,7 @@ DialogWidth=720
 
 [Containments][1154][Applets][1155][Configuration][General]
 favoritesPortedToKAstats=true
-icon=view-list-details
+icon=bookmark-new-list
 systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 
 [Containments][946][Applets][948]

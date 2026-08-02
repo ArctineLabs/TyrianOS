@@ -28,6 +28,7 @@ full_reset.confirmed() {
 	rpm-ostree cleanup -m
 	echo "-- Aggressively deleting all users, even if still logged in... (We're restarting, this will not matter.)"
 	for u in $(awk -F: '$3 >= 1000 {print $1}' /etc/passwd); do userdel -f -r "$u"; done || echo "Failure on removing users using userdel!?"
+	# shellcheck disable=SC2115
 	rm -rfv /home/* || true # in case users have been deleted but chose to keep their data
 	rm -rfv /var/mail/*	 || true # in case users have been deleted but chose to keep their data
 	echo "-- Wiping /etc (while preserving machine-id, hostname, fstab and crypttab.)"

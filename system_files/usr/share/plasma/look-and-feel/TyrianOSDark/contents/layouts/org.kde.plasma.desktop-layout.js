@@ -42,7 +42,7 @@ var layout = {
                         },
                         "/General": {
                             "favoritesPortedToKAstats": "true",
-                            "icon": "view-list-details",
+                            "icon": "bookmark-new-list",
                             "systemFavorites": "suspend\\,hibernate\\,reboot\\,shutdown"
                         }
                     },
