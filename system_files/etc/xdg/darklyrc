@@ -1,0 +1,10 @@
+[Common]
+ButtonHeight=1
+
+[Style]
+DockWidgetDrawFrame=true
+NewDolphinSelectionStyle=true
+TabBarAltStyle=true
+TabDrawHighlight=true
+UnifiedTabBarKonsole=true
+

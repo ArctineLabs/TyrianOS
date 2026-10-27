@@ -21,7 +21,7 @@ wallpaperplugin=org.kde.image
 positions={"1536x960":[],"1745x1091":[]}
 
 [Containments][945][Wallpaper][org.kde.image][General]
-Image=/usr/share/wallpapers/TyOS42/
+Image=/usr/share/wallpapers/pawap/
 SlidePaths=/var/home/kevadesu/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][946]

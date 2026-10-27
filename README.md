@@ -17,7 +17,7 @@ Meanwhile, our focus shifted towards [ArctineOS](https://arctine.rootsource.cc/O
 WIP section
 
 TyrianOS is based on the following image:
-- Fedora: `ghcr.io/ublue-os/kinoite-main:42`
+- Fedora: `ghcr.io/ublue-os/kinoite-main:45`
 
 It uses KDE Plasma as desktop environment and is meant for general use.
 
@@ -28,13 +28,14 @@ It uses KDE Plasma as desktop environment and is meant for general use.
 - **Includes [Fyra Labs' Terra](https://terra.fyralabs.com/) repo**
 	- Terra is a repository that is built on the Andaman toolchain, which simplifies the process of maintaining packages. Packages on Terra are automatically updated as soon as there's a new upstream release on a 30 minute interval. Packages on Terra are built by a team of maintainers with experience, ensuring the maintenance of a high quality of packages.
 - **Customised KDE installation**
-	- TyrianOS comes with a customised version of KDE, mostly with elements from the [Monochrome-KDE](https://github.com/pwyde/monochrome-kde) theme
+	- TyrianOS comes with a customised version of KDE, mostly with elements from different sources like [Bibata](https://github.com/ful1e5/Bibata_Cursor), [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) and [Darkly](https://github.com/Bali10050/Darkly).
 - **Two distinct modes**
   - TyrianOS comes with a desktop and mobile session, fitting the needs of different device sizes.
+- **Easier system updates**
+  - TyrianOS now allows you to simply update the system via KDE Discover, no need to use the terminal for that anymore!
 
 
 More things are announced to come to TyrianOS soon. 
-
 
 # Installation
 

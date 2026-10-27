@@ -1,5 +1,5 @@
 [kcminputrc][Mouse]
-cursorTheme=breeze_cursors
+cursorTheme=Bibata-Modern-Classic
 
 [kdeglobals][General]
 accentColorFromWallpaper=true
@@ -9,7 +9,7 @@ ColorScheme=TyrianOSDark
 Theme=Papirus
 
 [kdeglobals][KDE]
-widgetStyle=Breeze
+widgetStyle=Darkly
 
 [kwinrc][DesktopSwitcher]
 LayoutName=org.kde.breeze.desktop
@@ -22,7 +22,10 @@ library=org.kde.breeze
 theme=Breeze
 
 [plasmarc][Theme]
-name=default
+name=darkly
+
+[plasmarc][Theme-plasma-themeexplorer]
+name=darkly
 
 [breezerc][Windeco]
 ButtonSize=ButtonSmall

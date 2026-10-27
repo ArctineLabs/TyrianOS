@@ -150,7 +150,8 @@ toolBarFont=Inter,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 AutomaticLookAndFeel=true
 DefaultDarkLookAndFeel=TyrianOSDark
 DefaultLightLookAndFeel=TyrianOSLight
-LookAndFeelPackage=TyrianOSDark
+LookAndFeelPackage=TyrianOSLight
+widgetStyle=Darkly
 contrast=4
 frameContrast=0.2
 
