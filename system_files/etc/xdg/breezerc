@@ -1,0 +1,7 @@
+[Common]
+RoundedCorners=true
+
+[Windeco]
+ButtonSize=ButtonLarge
+DrawBackgroundGradient=true
+TitleAlignment=AlignLeft

@@ -18,7 +18,7 @@ var layout = {
                     "positions": "{\"1536x960\":[]}"
                 },
                 "/Wallpaper/org.kde.image/General": {
-                    "Image": "/usr/share/wallpapers/TyOS42/",
+                    "Image": "/usr/share/wallpapers/pawap/",
                     "SlidePaths": "/usr/share/wallpapers/"
                 }
             },
@@ -42,7 +42,7 @@ var layout = {
                         },
                         "/General": {
                             "favoritesPortedToKAstats": "true",
-                            "icon": "bookmark-new-list",
+                            "icon": "view-list-details",
                             "systemFavorites": "suspend\\,hibernate\\,reboot\\,shutdown"
                         }
                     },

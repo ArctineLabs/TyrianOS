@@ -14,7 +14,7 @@ IMAGE_LIKE="fedora"
 HOME_URL="https://arctine.rootsource.cc/TyrianOS"
 SUPPORT_URL="https://github.com/ArctineLabs/TyrianOS/issues/"
 BUG_SUPPORT_URL="https://github.com/ArctineLabs/TyrianOS/issues/"
-CODE_NAME="Milano"
+CODE_NAME="Montreal"
 #VERSION="${VERSION:-00.00000000}"
 IMAGE_NAME=tyrianos
 IMAGE_VENDOR=arctine
@@ -22,12 +22,13 @@ IMAGE_VENDOR=arctine
 
 # OS Release File
 sed -i "s|^NAME=.*|NAME=\"TyrianOS\"|" /usr/lib/os-release
-sed -i "s|^PRETTY_NAME=.*|PRETTY_NAME=\"${IMAGE_PRETTY_NAME} 44.1 (${CODE_NAME})\"|" /usr/lib/os-release
+sed -i "s|^PRETTY_NAME=.*|PRETTY_NAME=\"${IMAGE_PRETTY_NAME} 45 (${CODE_NAME})\"|" /usr/lib/os-release
 sed -i "s|^HOME_URL=.*|HOME_URL=\"$HOME_URL\"|" /usr/lib/os-release
 sed -i "s|^SUPPORT_URL=.*|SUPPORT_URL=\"$SUPPORT_URL\"|" /usr/lib/os-release
 sed -i "s|^BUG_REPORT_URL=.*|BUG_REPORT_URL=\"$BUG_SUPPORT_URL\"|" /usr/lib/os-release
 sed -i "s|^DEFAULT_HOSTNAME=.*|DEFAULT_HOSTNAME=\"tyrianos\"|" /usr/lib/os-release
-sed -i "s|^VERSION_CODENAME=.*|VERSION_CODENAME=\"Milano\"|" /usr/lib/os-release
+sed -i "s|^VERSION_CODENAME=.*|VERSION_CODENAME=\"${CODE_NAME}\"|" /usr/lib/os-release
+sed -i "s|Kinoite|${CODE_NAME}|g" /usr/lib/os-release
 
 
 # Added in systemd 249.

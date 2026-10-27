@@ -1,0 +1,185 @@
+[ColorEffects:Disabled]
+ChangeSelectionColor=
+Color=56,56,56
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0.65
+ContrastEffect=1
+Enable=
+IntensityAmount=0.1
+IntensityEffect=2
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+Color=112,111,110
+ColorAmount=0.025
+ColorEffect=2
+ContrastAmount=0.1
+ContrastEffect=2
+Enable=false
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=198,128,207
+BackgroundNormal=255,246,255
+DecorationFocus=176,76,188
+DecorationHover=176,76,188
+ForegroundActive=176,76,188
+ForegroundInactive=123,119,146
+ForegroundLink=128,55,137
+ForegroundNegative=212,73,102
+ForegroundNeutral=241,118,74
+ForegroundNormal=43,33,48
+ForegroundPositive=87,167,117
+ForegroundVisited=158,87,182
+
+[Colors:Complementary]
+BackgroundAlternate=34,25,39
+BackgroundNormal=50,41,58
+DecorationFocus=176,76,188
+DecorationHover=176,76,188
+ForegroundActive=176,76,188
+ForegroundInactive=172,163,186
+ForegroundLink=229,187,236
+ForegroundNegative=212,73,102
+ForegroundNeutral=241,118,74
+ForegroundNormal=255,246,255
+ForegroundPositive=87,167,117
+ForegroundVisited=158,87,182
+
+[Colors:Header]
+BackgroundAlternate=249,234,252
+BackgroundNormal=232,218,237
+DecorationFocus=176,76,188
+DecorationHover=176,76,188
+ForegroundActive=176,76,188
+ForegroundInactive=123,119,146
+ForegroundLink=128,55,137
+ForegroundNegative=212,73,102
+ForegroundNeutral=241,118,74
+ForegroundNormal=43,33,48
+ForegroundPositive=87,167,117
+ForegroundVisited=158,87,182
+
+[Colors:Header][Inactive]
+BackgroundAlternate=237,223,242
+BackgroundNormal=249,234,252
+DecorationFocus=103,167,232
+DecorationHover=103,167,232
+ForegroundActive=103,167,232
+ForegroundInactive=123,119,146
+ForegroundLink=78,122,185
+ForegroundNegative=212,73,102
+ForegroundNeutral=241,118,74
+ForegroundNormal=43,33,48
+ForegroundPositive=87,167,117
+ForegroundVisited=158,87,182
+
+[Colors:Selection]
+BackgroundAlternate=199,129,208
+BackgroundNormal=199,129,208
+DecorationFocus=176,76,188
+DecorationHover=176,76,188
+ForegroundActive=176,76,188
+ForegroundInactive=0,0,0
+ForegroundLink=128,55,137
+ForegroundNegative=172,57,86
+ForegroundNeutral=194,93,61
+ForegroundNormal=0,0,0
+ForegroundPositive=55,98,73
+ForegroundVisited=158,87,182
+
+[Colors:Tooltip]
+BackgroundAlternate=249,234,252
+BackgroundNormal=255,241,255
+DecorationFocus=176,76,188
+DecorationHover=176,76,188
+ForegroundActive=176,76,188
+ForegroundInactive=123,119,146
+ForegroundLink=128,55,137
+ForegroundNegative=212,73,102
+ForegroundNeutral=241,118,74
+ForegroundNormal=43,33,48
+ForegroundPositive=87,167,117
+ForegroundVisited=158,87,182
+
+[Colors:View]
+BackgroundAlternate=255,241,255
+BackgroundNormal=255,249,255
+DecorationFocus=176,76,188
+DecorationHover=176,76,188
+ForegroundActive=176,76,188
+ForegroundInactive=123,119,146
+ForegroundLink=128,55,137
+ForegroundNegative=212,73,102
+ForegroundNeutral=241,118,74
+ForegroundNormal=43,33,48
+ForegroundPositive=87,167,117
+ForegroundVisited=158,87,182
+
+[Colors:Window]
+BackgroundAlternate=237,223,242
+BackgroundNormal=249,234,252
+DecorationFocus=176,76,188
+DecorationHover=176,76,188
+ForegroundActive=176,76,188
+ForegroundInactive=123,119,146
+ForegroundLink=128,55,137
+ForegroundNegative=212,73,102
+ForegroundNeutral=241,118,74
+ForegroundNormal=43,33,48
+ForegroundPositive=87,167,117
+ForegroundVisited=158,87,182
+
+[General]
+AccentColor=176,76,188
+ColorSchemeHash=e383a041a0ad82522ecef210151a1fee163a356c
+LastUsedCustomAccentColor=233,58,154
+XftAntialias=true
+XftHintStyle=hintmedium
+XftSubPixel=rgb
+accentColorFromWallpaper=true
+fixed=Adwaita Mono,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+font=Inter,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+menuFont=Inter,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+smallestReadableFont=Inter,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+toolBarFont=Inter,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+
+[KDE]
+AutomaticLookAndFeel=true
+DefaultDarkLookAndFeel=TyrianOSDark
+DefaultLightLookAndFeel=TyrianOSLight
+LookAndFeelPackage=TyrianOSLight
+widgetStyle=Darkly
+contrast=4
+frameContrast=0.2
+
+[KFileDialog Settings]
+Allow Expansion=false
+Automatically select filename extension=true
+Breadcrumb Navigation=true
+Decoration position=2
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
+Show Bookmarks=false
+Show Full Path=false
+Show Inline Previews=true
+Show Preview=false
+Show Speedbar=true
+Show hidden files=false
+Sort by=Date
+Sort directories first=true
+Sort hidden files last=false
+Sort reversed=false
+Speedbar Width=140
+View Style=DetailTree
+
+[WM]
+activeBackground=249,234,252
+activeBlend=227,229,231
+activeFont=Inter,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+activeForeground=0,0,0
+inactiveBackground=249,234,252
+inactiveBlend=239,240,241
+inactiveForeground=99,93,100

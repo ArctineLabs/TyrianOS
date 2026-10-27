@@ -15,7 +15,7 @@
         "Name": "TyrianOS Dark",
         "Description": "Default dark theme for TyrianOS",
         "Id": "TyrianOSDark",
-        "Version": "43",
+        "Version": "44",
         "License": "LGPLv2",
         "Website": "https://arctine.rootsource.cc/TyrianOS"
     }

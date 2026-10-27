@@ -148,6 +148,15 @@ dnf5 install -y just
 limsg s 2 i "Installing packages: KDE Plasma Desktop, KDialog, Plasma Mobile"
 dnf5 install -y @kde-desktop kdialog plasma-mobile plasma-mobile-sounds
 
+limsg s 2 i "Installing packages: RPM-OSTree support for KDE Plasma Discover"
+dnf5 install -y plasma-discover-rpm-ostree
+
+limsg s 2 i "Installing packages: Dandified YUM 4 (for backwards-compatibility with tydev)"
+dnf install dnf4 -y
+
+limsg s 2 i "Installing packages: Darkly"
+dnf install darkly -y
+
 limsg s 2 i "Installing packages: Gum"
 dnf install gum -y
 
@@ -178,6 +187,8 @@ systemctl enable plasma-setup.service
 limsg s 3 i "Installing icon pack: Papirus"
 dnf5 install papirus-icon-theme -y
 # dnf5 install lightly-qt6  --nogpgcheck -y
+limsg s 3 i "Installing cursor theme: Bibata Cursor"
+dnf5 install bibata-cursor-theme -y
 #### Install Inter
 limsg s 3 i "Installing font: Inter"
 dnf5 install rsms-inter-fonts rsms-inter-vf-fonts -y
