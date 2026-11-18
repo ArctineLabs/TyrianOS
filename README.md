@@ -39,15 +39,53 @@ More things are announced to come to TyrianOS soon.
 
 # Installation
 
+## 1. Via rebase
+
+ISOs are currently not available, so this is the current recommended approach.
+
+- First rebase to the unsigned image, to get the proper signing keys and policies installed:
+  ```
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/arctinelabs/tyrianos:latest
+  ```
+- Reboot to complete the rebase:
+  ```
+  systemctl reboot
+  ```
+- Then rebase to the signed image, like so:
+  ```
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/arctinelabs/tyrianos:latest
+  ```
+- Reboot again to complete the installation
+  ```
+  systemctl reboot
+  ```
+
+- When logged into KDE Plasma, finish setting up TyrianOS (a keyboard with arrow keys is required for this):
+  ```
+  tyrianos-firstsetup
+  ```
+
+
+
+#### Verification
+
+These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
+
+```bash
+cosign verify --key cosign.pub ghcr.io/arctinelabs/tyrianos
+```
+
+## 2. Using an ISO
+
 On real hardware:
 
-1. Grab the latest ISO under artifacts from the latest successful job of workflow [Build ISOs](https://github.com/ArctineLabs/TyrianOS/actions/workflows/build-iso.yml)
+1. Grab the latest ISO under artifacts from the latest successful job of workflow [Build ISOs](https://github.com/ArctineLabs/TyrianOS/actions/workflows/build-iso.yml) (expired)
 2. Flash it on a USB or any other bootable media
 3. Boot into the media and follow the steps of the installer.
 
 In a virtual machine: 
 
-1. Grab the latest ISO under artifacts from the latest successful job of workflow [Build ISOs](https://github.com/ArctineLabs/TyrianOS/actions/workflows/build-iso.yml)
+1. Grab the latest ISO under artifacts from the latest successful job of workflow [Build ISOs](https://github.com/ArctineLabs/TyrianOS/actions/workflows/build-iso.yml) (expired)
 2. In the settings of the hypervisor, add the downloaded ISO as CD or generally media, and configure the image to be at the highest boot priority in the virtual machine's settings
 3. Boot into the image and follow the steps of the installer.
 
