@@ -11,6 +11,10 @@ on:
       - main
     paths-ignore:
       - '**/README.md'
+      - '**/.gitignore'
+      - '**/.github/workflows/build-*'
+      - '**/.github/dependa*'
+      - '**/.github/reno*'
   workflow_dispatch:
 
 env:
